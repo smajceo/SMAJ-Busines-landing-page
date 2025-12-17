@@ -6,68 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMAJ Business</title>
     <link rel="stylesheet" href="business-landing-page/css/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+          integrity="sha512-bXBmd7rTnZsyZn7HksQnxI6dsr7yrlai3WdxWVpk15JKOqB+ZatQYxPIcX6ImG1FR8OBAb3ybHxyd1EETTvk5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-
-    <!-- header -->
+    <!-- Header -->
     <header class="header">
-        <h1 class="logo">SMAJ</h1>
+        <h1 class="logo">SMAJ Business</h1>
         <nav>
-            <a href="">Home</a>
-            <a href="">service</a>
-            <a href="">Contact</a>
+            <a href="#Home">Home</a>
+            <a href="#Service">Service</a>
+            <a href="#Contact">Contact</a>
         </nav>
-
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="Home">
-        <h2>
-            build Your Business Online With SMAJ
-        </h2>
-        <p>
-            clean, responsive website for small business
-        </p>
-        <button onclick='scrollToContant()'>'GET STARTED'</button>
+        <h2 class="animate__animated animate__fadeInUp">Welcome to SMAJ Business</h2>
+        <p class="animate__animated animate__fadeInUp">Your trusted partner for building online presence</p>
+        <img class="profile-picture animate__animated animate__zoomIn" src="images/smaj.jpg" alt="Profile Picture">
+        <button onclick="scrollToContant()" class="animate__animated animate__fadeInDown">Get Started</button>
     </section>
 
-    <!-- service -->
-    <section class="service">
-        <h2>
-            Our Service
-        </h2>
+    <!-- Service Section -->
+    <section class="service" id="Service">
+        <h2>Our Services</h2>
         <div class="service-box">
             <div class="card">Website Design</div>
             <div class="card">Responsive Layout</div>
             <div class="card">Website Fixing</div>
-
         </div>
-
     </section>
 
-    <!-- Contant -->
-    <section class="contact" id="contant">
-        <h2>Contant Us</h2>
-        <Form onsubmit="sendMessage(event)">
+    <!-- Contact Section -->
+    <section class="contact" id="Contact">
+        <h2>Contact Us</h2>
+        <form onsubmit="sendMessage(event)">
             <input type="text" placeholder="Your Name" required>
-
             <input type="email" placeholder="Your Email" required>
-
             <textarea placeholder="Your Message" required></textarea>
-
-            <button type="submit">
-                Send
-            </button>
-
-        </Form>
-
-
+            <button type="submit">Send</button>
+        </form>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer with Social Media -->
     <footer class="footer">
-        <p>&copy; 2025 SMAJ. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com"><i class="bx bxl-facebook"></i></a>
+            <a href="https://tiktok.com"><i class="bx bxl-tiktok"></i></a>
+            <a href="https://linkedin.com"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://instagram.com"><i class="bx bxl-instagram"></i></a>
+            <a href="https://telegram.org"><i class="bx bxl-telegram"></i></a>
+            <a href="https://twitter.com"><i class="bx bxl-twitter"></i></a>
+            <a href="https://discord.com"><i class="bx bxl-discord"></i></a>
+        </div>
+                <p>&copy; 2025 SMAJ Business. All Rights Reserved.</p>
 
     </footer>
 
