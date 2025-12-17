@@ -1,0 +1,86 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
+
+ body {
+     line-height: 1.6;
+ }
+
+ .header {
+     display: flex;
+     justify-content: space-between;
+     padding: 15px 30px;
+     background: #222;
+     color: #fff;
+ }
+
+ .header a {
+     color: #fff;
+     margin-left: 15px;
+     text-decoration: none;
+ }
+
+ .hero {
+     padding: 60px 20px;
+     text-align: center;
+     background: #f4f4f4;
+ }
+
+ .hero button {
+     margin-top: 15px;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+
+ .service {
+     padding: 40px 20px;
+     text-align: center;
+ }
+
+ .service-box {
+     display: flex;
+     gap: 15px;
+     justify-content: center;
+     flex-wrap: wrap;
+
+ }
+
+ .contant {
+     padding: 40px 20px;
+     background: #f4f4f4;
+ }
+
+ .contant form {
+     max-width: 400px;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     background-color: aqua;
+ }
+
+ .contant input,
+ .contant textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+ }
+
+ .footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+    
+ } 
+ 
+ /* responsive */
+ @media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+ }
